@@ -1,0 +1,113 @@
+ 
+
+.nicesexytext {
+  font-family: sans-serif;
+  font-weight:0;
+  font-size:calc(0.092592592vh * 18px);
+  letter-spacing:0.1em;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  color:white;
+  width:100%;
+  opacity:0.8;
+  margin-top:-9%;
+}
+
+* {
+  font-family: 'Gilroy';
+  margin: 0;
+  padding: 0;
+  text-shadow: 0px 0px 0px black;
+}
+
+.divwrap {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  justify-content: end;
+  padding: 0;
+}
+
+.notify-wrap {
+  height: 99%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: calc(0.092592592vh * 30) calc(0.092592592vh * 20);
+  max-width: calc(0.092592592vh * 320);
+}
+
+.notify-timer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transform: scale(1.4) rotate(-90deg);
+}
+
+.notification-bg {
+  color: #fff;
+  margin:6px;
+  text-align: left;
+  padding: calc(0.092592592vh * 5) calc(0.092592592vh * 10);
+  position: relative;
+  font-size:calc(0.092592592vh * 12);
+  display:inline-block;
+
+  background: radial-gradient(31.98% 56.85% at 50% 50%, rgba(12, 13, 18, 0.96) 0%, rgba(14, 15, 19, 0.96) 100%);
+  box-shadow: inset 0px 0px 72px rgba(0, 248, 185, 0.25);
+ 
+  border-radius: 7px;
+
+  display: flex;
+  max-width: calc(0.092592592vh * 320);
+  justify-content: space-between;
+  align-items: center;
+}
+
+ .notification-bg span {
+  width: 100%;
+  padding-right: 10%;
+  font-family: "Gilroy";
+  font-weight: 400;
+ }
+
+ .notification-bg .icon {
+  transform: translateY(10%);
+ }
+
+.red {
+ 
+
+background: radial-gradient(31.98% 56.85% at 50% 50%, rgba(12, 13, 18, 0.96) 0%, rgba(14, 15, 19, 0.96) 100%);
+box-shadow: inset 0px 0px 72px rgba(185, 65, 65, 0.25);
+ 
+ 
+}
+
+.red .progressCircle {
+  stroke: #B94141;
+}
+
+.taxi {
+  background: radial-gradient(31.98% 56.85% at 50% 50%, rgba(12, 13, 18, 0.96) 0%, rgba(14, 15, 19, 0.96) 100%);
+  box-shadow: inset 0px 0px 72px rgba(185, 159, 65, 0.25);
+  /* background-color: rgba(21, 100, 15, 0.7);
+  border-color: rgba(10, 50, 7, 0.5) */
+}
+
+.taxi .progressCircle {
+  stroke: #B99F41;
+}
+
+.medical {
+  background: radial-gradient(31.98% 56.85% at 50% 50%, rgba(12, 13, 18, 0.96) 0%, rgba(14, 15, 19, 0.96) 100%);
+  box-shadow: inset 0px 0px 72px rgba(185, 159, 65, 0.25);
+
+  /* background-color: rgba(51, 70, 195, 0.7);
+  border-color: rgba(26, 35, 98, 0.5); */
+}
+
+.medical .progressCircle {
+  stroke: #B99F41;
+}
