@@ -1,7 +1,7 @@
 <div align='center'><h2>Usage</h2></div>
 
 Event:
-  - TriggerEvent('notifications:sendNotification', 2, 'Hello world!, 5000)
+  - TriggerEvent('notifications:sendNotification', 2, 'Hello world!', 5000)
 
 Colors:
   - Normal: 1
