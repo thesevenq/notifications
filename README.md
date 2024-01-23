@@ -1,5 +1,5 @@
 Exports Event:
-  - exports['notifications']:sendnotify(2, 'Hello World!', 5000)
+  - exports['notifications']:sendnotify('Hello World!', 2, 5000)
 
 QBCore Notify: At line 83 in qb-core > client > function.lua > Line 83 Replace until Line 106
 
