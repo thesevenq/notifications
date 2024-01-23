@@ -1,7 +1,21 @@
-<div align='center'><h2>Usage</h2></div>
+Exports Event:
+  - exports['notifications']:sendnotify('Hello World!', 2, 5000)
 
-Event:
-  - TriggerEvent('notifications:sendNotification', 2, 'Hello world!, 5000)
+QBCore Notify: At line 83 in qb-core > client > function.lua > Line 83 Replace until Line 106
+
+function QBCore.Functions.Notify(text, texttype, length)
+    if type(text) == "table" then
+        local ttext = text.text or 'Placeholder'
+        local caption = text.caption or 'Placeholder'
+        texttype = texttype or 'primary'
+        length = length or 5000
+        exports['notifications']:sendnotify(ttext, texttype, length, caption)
+    else
+        texttype = texttype or 'primary'
+        length = length or 5000
+        exports['notifications']:sendnotify(text, texttype, length)
+    end
+end
 
 Colors:
   - Normal: 1
