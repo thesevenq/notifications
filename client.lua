@@ -1,19 +1,11 @@
-function openGui(color,message,time)
+local function openGui(text,type,length)
     guiEnabled = true
-    SendNUIMessage({runProgress = true, colorsent = color, textsent = message, fadesent = time})
+    SendNUIMessage({runProgress = true, colorsent = type, textsent = text, fadesent = length})
 end
+exports('sendnotify', openGui)
 
 function closeGui()
     guiEnabled = false
     SendNUIMessage({closeProgress = true})
 end
-
-RegisterNetEvent("notifications:sendNotification")
-AddEventHandler("notifications:sendNotification", function(color,message,time)
-    openGui(color,message,time)
-end)
-
-RegisterNetEvent("notifications:closeUI")
-AddEventHandler("notifications:closeUI", function()
-    closeGui()
-end)
+exports('closenotify', closeGui)
