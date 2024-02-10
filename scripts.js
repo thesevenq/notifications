@@ -86,11 +86,11 @@ var warningSvg = `<svg width="40" height="42" viewBox="0 0 40 42" fill="none" xm
       var fadetimer = item.fadesent
       var element
       $('#colorsent' + item.colorsent).css('display', 'none');
-      if (item.colorsent == 2) {
+      if (item.colorsent == 'error) {
         element = $('<div id="colorsent' + item.colorsent + '" class="notification-bg red" style="display:none" data-total-time="' + fadetimer + '"><i class="icon">' + errorSvg + "</i>" + message + notifyTimer + '</div>'); 
-      } else if (item.colorsent == 3) {
+      } else if (item.colorsent == 'warning') {
         element = $('<div id="colorsent' + item.colorsent + '" class="notification-bg taxi" style="display:none" data-total-time="' + fadetimer + '"><i class="icon">' + warningSvg + "</i>" + message + notifyTimer + '</div>');
-      } else if (item.colorsent == 3) {
+      } else if (item.colorsent == 'warning') {
         element = $('<div id="colorsent' + item.colorsent + '" class="notification-bg medical" style="display:none" data-total-time="' + fadetimer + '"><i class="icon">' + warningSvg + "</i>" + message + notifyTimer + '</div>');
       } else {
         element = $('<div id="colorsent' + item.colorsent + '" class="notification-bg normal" style="display:none" data-total-time="' + fadetimer + '"><i class="icon">' + infoSvg + "</i>" + message + notifyTimer + '</div>'); 
